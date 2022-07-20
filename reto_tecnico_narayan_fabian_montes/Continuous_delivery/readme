@@ -1,0 +1,4 @@
+continuous_delivery
+07/19/2022
+creación de un ACR a traves de AMR template
+Este ARM puede ejecutarse en cualquier cuenta de AZURE ya que es generico y se desplegara automaticamente valores que se pediran son Suscripcion y resource group estos parametro deben ser provistos por la persona que quiera desplegar este componente en AZURE

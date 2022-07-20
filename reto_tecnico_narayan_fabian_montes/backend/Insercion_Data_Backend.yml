@@ -1,0 +1,15 @@
+CMD: ["java","-jar","backend-0.0.1-SNAPSHOT.jar"]
+Data:
+  insercion_1:
+    html_arch: http://api/backend/sumar/sumando01/sumando02/resultado
+    numero_1: 9
+    numero_2: 9
+    resultado: $resultado
+  insercion_2:
+    html_arch: http://api/backend/sumar/sumando01/sumando02/resultado
+    numero_1: 21
+    numero_2: 3
+    resultado: $resultado
+
+
+

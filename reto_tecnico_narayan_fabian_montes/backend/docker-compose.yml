@@ -1,0 +1,23 @@
+version: "3.7"
+
+services:
+  app:
+    image: java:latest
+    command: sh -c "yarn install && yarn run dev"
+    ports:
+      - 80:80
+    working_dir: /app
+    volumes:
+      - ./:/app
+
+  postgress:
+    image: postgress:latest
+    volumes:
+      - todo-postgress-data:/var/lib/postgress
+    environment: 
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: reto_tecnico
+
+volumes:
+  reto-tecnico-postgress-data: resultado
+  

@@ -1,0 +1,18 @@
+- stage: Build
+  displayName: Build and push stage
+  jobs:  
+  - job: Build
+    displayName: Build job
+    pool:
+      vmImage: docker_java
+    steps:
+    - task: backend_app
+      displayName: Build and push an image to container registry
+      inputs:
+        command: buildAndPush
+        repository: container_registry_agileopsexam
+        containerRegistry: container_registry_agileopsexam
+        tags: |
+          desarrollo
+
+          
